@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords"
+          content="КАБИНЕТ ФИЗИКИ, Немного о нас, Пиши, твори и вдохновляй!, КАК ОПИСАТЬ ПРИРОДУ, ВОПРОСЫ?комментарии?">
+    <meta name="description" content="">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../static/css/main.css" media="screen">
+    <link rel="stylesheet" href="../static/css/Главная.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../static/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../static/js/main.js" defer=""></script>
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+
+
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "logo": "../static/img/default-logo.png"
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+<header class="u-clearfix u-header u-header" id="sec-0567">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="/" class="u-image u-logo u-image-1">
+            <img src="../static/img/default-logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                   href="/">
+                    <svg class="u-svg-link" viewBox="0 0 24 24">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                    </svg>
+                    <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect y="1" width="16" height="2"></rect>
+                            <rect y="7" width="16" height="2"></rect>
+                            <rect y="13" width="16" height="2"></rect>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="u-nav-container">
+                <ul class="u-nav u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="/approved_panel" style="padding: 10px 20px;">Новости</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="/developer_panel" style="padding: 10px 20px;">ЕГЭ/ОГЭ</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="#numb-phone1" style="padding: 10px 20px;">Контакты</a>
+                    </li>
+                    {% if current_user.is_authenticated %}
+                    <a class="navbar-brand" href="/user_profile">{{ current_user.name }}</a>
+                    {% else %}
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="/login" style="padding: 10px 20px;">Войти</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="/register" style="padding: 10px 20px;">Зарегистрироваться</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      href="/approved_panel">Новости</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      href="Контакты.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="u-align-center u-clearfix u-palette-4-base u-section-1" id="carousel_c66b" style="background: linear-gradient(white, white, #f9f8f6, #f9f8f6, #d6d4d1, #d6d4d1);">
+    <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+                <div class="u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-30 u-size-xs-60 u-white u-layout-cell-1"
+                     src="">
+                    <div class="u-container-layout u-container-layout-1"><span
+                            class="u-icon u-icon-circle u-text-black u-icon-1"><svg class="u-svg-link"
+                                                                                    preserveAspectRatio="xMidYMin slice"
+                                                                                    viewBox="0 0 486.065 486.065"
+                                                                                    style=""><use
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b444"></use></svg><svg
+                            class="u-svg-content" viewBox="0 0 486.065 486.065" x="0px" y="0px" id="svg-b444"
+                            style="enable-background:new 0 0 486.065 486.065;"><path
+                            d="M480.227,6.129C475.986,1.888,469.725,0,459.885,0c-25.543,0-75.785,12.639-125.034,31.457  c-3.876,1.483-6.792,4.762-7.801,8.788l-12.971,51.601l-8.083-32.17c-0.928-3.686-3.462-6.759-6.892-8.39  c-3.445-1.64-7.421-1.623-10.866-0.017c-53.423,25.096-96.294,53.597-127.404,84.698c-47.608,47.608-79.976,98.149-93.609,146.138  c-12.225,43.045-7.886,80.482,11.91,107.094l-75.14,75.148c-4.968,4.968-4.968,13.019,0,17.989c4.97,4.97,13.021,4.97,17.991,0  l75.388-75.396c16.532,12.249,37.255,19,61.159,19c68.877,0,142.908-51.509,191.825-100.443  C445.043,230.82,504.909,30.844,480.227,6.129z M91.707,289.055c12.259-43.202,43.202-91.183,87.117-135.098  c10.271-10.262,22.379-20.16,35.466-29.834l8.697,121.232L97.473,370.878C84.42,350.793,82.233,322.358,91.707,289.055z   M115.38,388.935l35.664-35.666l95.763,20.077c-31.342,17.428-61.789,27.151-88.276,27.151  C141.469,400.497,127.057,396.57,115.38,388.935z M277.519,353.8l-104.972-22.016l127.899-127.908c4.97-4.97,4.97-13.021,0-17.991  c-4.97-4.968-13.021-4.968-17.989,0l-35.666,35.674l-8.183-114.06c14.362-9.111,29.602-18.006,46.515-26.455l16.632,66.079  c1.423,5.657,6.509,9.616,12.34,9.616c5.83,0,10.917-3.968,12.34-9.625l23.672-94.215c50.756-18.843,92.186-27.457,109.778-27.457  c0.497,0,0.945,0.008,1.342,0.017c2.534,33.71-43.235,196.43-128.861,282.048C314.526,325.357,296.039,340.688,277.519,353.8z"></path></svg></span>
+                        <h1 class="u-custom-font u-font-oswald u-text u-text-1">&nbsp; &nbsp; &nbsp; КАБИНЕТ ФИЗИКИ<br>
+                        </h1>
+                        <p class="u-align-center u-custom-font u-heading-font u-text u-text-2">МОАУ<br>"СОШ №40"</p>
+                        <a href="/approved_panel"
+                           class="u-btn u-button-style u-palette-2-light-1 u-text-palette-2-base u-btn-1">НОВОСТИ</a>
+                    </div>
+                </div>
+                <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1"
+                     data-image-width="5616" data-image-height="3744">
+                    <div class="u-container-layout u-valign-bottom u-container-layout-2" src=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="u-align-center u-clearfix u-section-2" id="carousel_f18d">
+    <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
+        <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
+            <div class="u-repeater u-repeater-1">
+                <div class="u-container-style u-list-item u-repeater-item">
+                    <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1"><span
+                            class="u-icon u-icon-circle u-palette-2-light-1 u-text-palette-2-base u-icon-1"><svg
+                            class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-53d5"></use></svg><svg
+                            class="u-svg-content" viewBox="0 0 512 512" id="svg-53d5"><g><path
+                            d="m471 262.813c22.945-2.032 41-21.348 41-44.813v-140c0-24.813-20.187-45-45-45h-149c-24.813 0-45 20.187-45 45v59h-187c-24.813 0-45 20.187-45 45v180c0 5.258.915 10.305 2.58 15h-16.58c-14.888 0-27 12.112-27 27 0 41.355 33.645 75 75 75h362c41.355 0 75-33.645 75-75 0-14.888-12.112-27-27-27h-16.58c1.665-4.695 2.58-9.742 2.58-15zm-168-184.813c0-8.271 6.729-15 15-15h149c8.271 0 15 6.729 15 15v140c0 8.271-6.729 15-15 15h-139c-2.812 0-5.566.79-7.95 2.28l-30.244 18.903 12.562-41.873c.419-1.398.632-2.85.632-4.31zm134 371h-362c-23.805 0-43.351-18.581-44.901-42h451.802c-1.55 23.419-21.096 42-44.901 42zm-294-185c0-9.374 7.626-17 17-17s17 7.626 17 17-7.626 17-17 17-17-7.626-17-17zm-8 64c0-9.056 11.682-17 25-17 7.142 0 14.023 2.228 18.879 6.113 2.287 1.829 6.121 5.675 6.121 10.887v49h-50zm80 49v-49c0-12.97-6.334-25.477-17.38-34.313-.248-.199-.507-.385-.759-.579 6.34-8.012 10.139-18.122 10.139-29.108 0-25.916-21.084-47-47-47s-47 21.084-47 47c0 10.999 3.808 21.118 10.16 29.134-11.144 8.607-18.16 21.049-18.16 34.866v49h-19c-8.271 0-15-6.729-15-15v-180c0-8.271 6.729-15 15-15h187v38.799l-11.929 39.763c-3.623 12.076.512 24.822 10.535 32.47 5.399 4.12 11.772 6.202 18.175 6.202 5.484 0 10.991-1.528 15.923-4.611l26.598-16.623h108.698v99c0 8.271-6.729 15-15 15z"></path><path
+                            d="m408 169h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"></path><path
+                            d="m352 127h80c8.284 0 15-6.716 15-15s-6.716-15-15-15h-80c-8.284 0-15 6.716-15 15s6.716 15 15 15z"></path>
+</g></svg>
+            
+            
+          </span>
+                        <div class="u-container-style u-group u-group-1">
+                            <div class="u-container-layout u-container-layout-2">
+                                <h5 class="u-text u-text-1">ПОСЛЕДНИЕ НОВОСТИ</h5>
+                                <p class="u-text u-text-2">Самые свежие новости по физике</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-container-style u-list-item u-repeater-item">
+                    <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3"><span
+                            class="u-icon u-icon-circle u-palette-2-light-1 u-text-palette-2-base u-icon-2"><svg
+                            class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512.007 512.007"
+                            style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-52b0"></use></svg><svg
+                            class="u-svg-content" viewBox="0 0 512.007 512.007" id="svg-52b0"><g><path
+                            d="m500.699 481.964-.656-.167-13.488-53.934c-1.032-4.13-3.771-7.627-7.533-9.618-4.553-2.411-88.953-46.35-166.99-38.038 59.699-31.065 147.889-14.223 149.03-13.996 8.123 1.62 16.024-3.644 17.65-11.768 1.624-8.123-3.644-16.025-11.768-17.65-1.72-.344-42.649-8.377-90.241-4.234-54.444 4.734-95.63 23.666-120.7 55.178-25.07-31.512-66.256-50.443-120.7-55.178-47.596-4.14-88.522 3.891-90.241 4.234-8.119 1.624-13.381 9.518-11.764 17.638s9.512 13.393 17.636 11.782c1.147-.228 89.34-17.071 149.04 13.995-78.036-8.311-162.436 35.627-166.989 38.038-3.762 1.991-6.501 5.488-7.533 9.618l-13.488 53.934-.656.167c-8.029 2.041-12.883 10.204-10.843 18.233 2.04 8.028 10.199 12.882 18.233 10.843l167.446-42.563c13.477 25.608 40.048 42.024 69.858 42.024s56.382-16.416 69.858-42.024l167.446 42.563c1.24.314 2.482.466 3.706.466 6.697-.001 12.802-4.521 14.527-11.309 2.043-8.03-2.811-16.193-10.84-18.234zm-179.95-45.741c-7.716-1.96-15.612 2.442-18.002 10.03-6.454 20.485-25.238 34.248-46.743 34.248s-40.289-13.763-46.743-34.248c-2.39-7.588-10.284-11.993-18.002-10.03l-146.272 37.18 7.887-31.536c25.915-12.359 131.677-58.071 194.528-14.077 5.164 3.615 12.039 3.615 17.203 0 62.707-43.894 168.608 1.76 194.531 14.087l7.884 31.526z"></path><path
+                            d="m428.004 66.502h13v13c0 8.284 6.716 15 15 15s15-6.716 15-15v-13h13c8.284 0 15-6.716 15-15s-6.716-15-15-15h-13v-13c0-8.284-6.716-15-15-15s-15 6.716-15 15v13h-13c-8.284 0-15 6.716-15 15s6.716 15 15 15z"></path><path
+                            d="m426.234 225.656-96 40c-7.646 3.186-11.263 11.968-8.076 19.615 2.4 5.761 7.977 9.234 13.852 9.234 1.923 0 3.878-.372 5.764-1.158l96-40c7.646-3.186 11.263-11.968 8.076-19.615-3.187-7.646-11.969-11.265-19.616-8.076z"></path><path
+                            d="m284.529 278.094c1.169.278 2.337.412 3.487.412 6.786 0 12.938-4.639 14.579-11.529l40-168c1.919-8.06-3.059-16.147-11.117-18.066-8.064-1.918-16.147 3.059-18.066 11.117l-40 168c-1.919 8.059 3.058 16.147 11.117 18.066z"></path><path
+                            d="m209.154 265.623c1.069 7.482 7.486 12.881 14.831 12.881.706 0 1.421-.05 2.14-.152 8.201-1.172 13.899-8.77 12.729-16.971l-16-112c-1.172-8.201-8.78-13.902-16.971-12.729-8.201 1.172-13.899 8.77-12.729 16.971z"></path><path
+                            d="m53.397 172.895c-5.858 5.857-5.858 15.355 0 21.213l96 96c2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.465 10.606-4.394c5.858-5.857 5.858-15.355 0-21.213l-96-96c-5.856-5.857-15.354-5.857-21.212 0z"></path><path
+                            d="m48.004 94.502c25.916 0 47-21.084 47-47s-21.084-47-47-47-47 21.084-47 47 21.084 47 47 47zm0-64c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"></path><circle
+                            cx="24.004" cy="271.503" r="15"></circle><circle cx="392.004" cy="151.5" r="15"></circle><circle
+                            cx="256.004" cy="63.501" r="15"></circle>
+</g></svg>
+            
+            
+          </span>
+                        <div class="u-container-style u-group u-video-cover u-group-2">
+                            <div class="u-container-layout u-container-layout-4">
+                                <h5 class="u-text u-text-3">ПОДГОТОВКА К ЕГЭ</h5>
+                                <p class="u-text u-text-4">Оптимизация своих знаний</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-container-style u-list-item u-repeater-item">
+                    <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-5"><span
+                            class="u-icon u-icon-circle u-palette-2-light-1 u-text-palette-2-base u-icon-3"><svg
+                            class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 -48 511.99864 511"
+                            style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ac92"></use></svg><svg
+                            class="u-svg-content" viewBox="0 -48 511.99864 511" id="svg-ac92"><path
+                            d="m24.859375 312.96875c3.820313 1.910156 7.933594 3.230469 12.175781 3.96875l-6.609375 9.4375c-1.335937 1.910156-2.207031 4.101562-2.550781 6.402344l-9.839844 66.359375c-.832031 5.621093 1.578125 11.230469 6.234375 14.488281 4.660157 3.261719 10.753907 3.605469 15.746094.902344l55.574219-30.09375c7.675781 13.867187 22.457031 23.28125 39.398437 23.28125 11.515625 0 22.035157-4.347656 30-11.484375 7.96875 7.136719 18.488281 11.484375 30 11.484375 24.816407 0 45.003907-20.1875 45.003907-45v-5.742188c27.902343 13.578125 58.972656 20.742188 90 20.742188 32.050781 0 63.835937-7.351563 92.003906-21.246094v36.246094c0 5.199218 2.691406 10.027344 7.113281 12.761718 4.414063 2.726563 9.9375 2.984376 14.59375.65625l60.003906-30c5.082031-2.542968 8.292969-7.734374 8.292969-13.417968v-180.003906c0-8.285157-6.71875-15-15-15-23.894531 0-81.863281 0-103.53125 0l-105.816406-51.777344 40.203125-57.414063c4.746093-6.78125 3.101562-16.140625-3.6875-20.890625l-49.148438-34.417968c-6.78125-4.746094-16.140625-3.101563-20.890625 3.683593-6.351562 9.070313-46.882812 66.957031-53.191406 75.964844-12.304688-6.464844-27.058594-6.433594-36.417969-2.371094l-57.078125 24.796875c-8.273437 3.597656-15.207031 9.519532-20.042968 17.132813l-81.90625 128.828125c-5.320313 8.371094-7.523438 22.734375-3.203126 35.699218 3.800782 11.402344 11.816407 20.644532 22.570313 26.023438zm27.253906 60.894531 4.921875-33.179687 13.414063-19.160156c5.75 8.394531 13.574219 15.25 22.730469 19.84375l-11.570313 16.523437zm82.875 3.855469c-8.269531 0-15-6.730469-15-15.003906v-7.332032l5.371094-7.667968h24.628906v15c0 8.273437-6.726562 15.003906-15 15.003906zm60.003907 0c-8.273438 0-15-6.730469-15-15.003906v-15h30v15c0 8.273437-6.730469 15.003906-15 15.003906zm287.007812-24.273438-30.003906 15v-170.734374h30.003906zm-98.597656-157.261718c2.054687 1.003906 4.308594 1.527344 6.59375 1.527344h32v125.53125c-10.109375 3.929687-41.5 24.472656-92 24.472656-53.535156 0-86.507813-23.710938-98.296875-28.417969-2.140625-1.070313-4.5-1.582031-6.707031-1.582031h-105.003907c-15.339843 0-28.019531-11.574219-29.78125-26.449219.46875-2.175781.425781-4.410156-.070312-6.546875 1.507812-15.140625 14.320312-27.003906 29.851562-27.003906h92.578125c31.363282 0 60.855469-12.214844 83.035156-34.394532 5.855469-5.859374 5.855469-15.355468 0-21.214843-5.859374-5.859375-15.355468-5.859375-21.214843 0-16.515625 16.511719-38.46875 25.609375-61.820313 25.609375h-3.179687l60.84375-86.898438zm-147.71875-110.640625 24.574218 17.210937-87.496093 124.960938h-36.625c12.753906-18.214844 87.847656-125.460938 99.546875-142.171875zm34.414062-49.148438 24.578125 17.207031-17.210937 24.578126-24.574219-17.210938zm-238.804687 230.1875 81.421875-128.066406c1.613281-2.539063 3.925781-4.511719 6.683594-5.710937l56.363281-24.488282c2.503906-.734375 5.085937-.785156 7.523437-.242187l-87.289062 124.660156c-18.449219 8.082031-32.082032 25.175781-35.285156 45.691406-2.742188 7.703125-14.660157 11.59375-22.433594 7.707031-7.316406-3.65625-10.222656-12.339843-6.984375-19.550781zm0 0"></path></svg>
+            
+            
+          </span>
+                        <div class="u-container-style u-group u-video-cover u-group-3">
+                            <div class="u-container-layout u-container-layout-6">
+                                <h5 class="u-text u-text-5">ПОЛЕЗНЫЕ ЗНАНИЯ</h5>
+                                <p class="u-text u-text-6">В удобном формате</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-container-style u-list-item u-repeater-item">
+                    <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-7"><span
+                            class="u-icon u-icon-circle u-palette-2-light-1 u-text-palette-2-base u-icon-4"><svg
+                            class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d4c"></use></svg><svg
+                            class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-1d4c"
+                            style="enable-background:new 0 0 512 512;"><g><g><path
+                            d="M135,0c-33.358,0-60,28.006-60,61c0,33.084,26.916,60,60,60s60-26.916,60-60C195,27.98,168.324,0,135,0z M135,91    c-16.542,0-30-13.458-30-30c0-16.804,13.738-31,30-31s30,14.196,30,31C165,77.542,151.542,91,135,91z"></path>
+</g>
+</g><g><g><path d="M467,0H255c-24.813,0-45,20.187-45,45v102.365l-13.183-13.182C188.317,125.682,177.017,121,165,121h-30    c-6.359,0-53.641,0-60,0c-41.355,0-75,33.645-75,75c0,8.529,0,77.68,0,90c0,24.813,20.187,45,45,45c5.257,0,10.307-0.906,15-2.57    V467c0,24.813,20.187,45,45,45c11.515,0,22.033-4.347,30-11.486c7.967,7.139,18.485,11.486,30,11.486c24.813,0,45-20.187,45-45    V268.444c11.469,4.045,24.174,3.266,35.126-2.191L295.631,241H467c24.813,0,45-20.187,45-45V45C512,20.187,491.813,0,467,0z     M291.709,209.419l-59.982,29.991c-5.627,2.804-12.616,1.91-17.333-2.806l-8.786-8.787c-9.276-9.276-25.567-2.967-25.607,10.56    c0,0.015-0.002,0.029-0.002,0.044V467c0,8.271-6.729,15-15,15s-15-6.729-15-15V316c0-8.284-6.716-15-15-15s-15,6.716-15,15v151    c0,8.271-6.729,15-15,15s-15-6.729-15-15V286c0-11.31,0-80.756,0-90c0-8.284-6.716-15-15-15s-15,6.716-15,15c0,8.529,0,77.68,0,90    c0,8.271-6.729,15-15,15c-8.271,0-15-6.729-15-15C30,274.69,30,205.244,30,196c0-24.813,20.187-45,45-45c11.31,0,80.756,0,90,0    c4.004,0,7.77,1.561,10.604,4.396l44.707,44.707c4.564,4.565,11.54,5.696,17.314,2.81l40.669-20.335    c7.444-3.725,16.415-0.714,20.124,6.712C302.128,196.711,299.13,205.709,291.709,209.419z M482,196c0,8.271-6.729,15-15,15    H327.419c0.091-0.257,0.191-0.509,0.277-0.768c2.16-6.48,2.808-13.218,1.982-19.8l82.03-41.015    c7.41-3.705,10.413-12.715,6.708-20.125c-3.705-7.41-12.716-10.414-20.125-6.708l-82.025,41.013    c-13.142-12.712-33.613-16.747-51.393-7.849L240,168.185V45c0-8.271,6.729-15,15-15h212c8.271,0,15,6.729,15,15V196z"></path>
+</g>
+</g></svg>
+            
+            
+          </span>
+                        <div class="u-container-style u-group u-video-cover u-group-4">
+                            <div class="u-container-layout u-container-layout-8">
+                                <h5 class="u-text u-text-7">АКТУАЛЬНАЯ ИНФОРМАЦИЯ</h5>
+                                <p class="u-text u-text-8">Всё доступно и просто</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="u-align-center u-clearfix u-palette-2-light-3 u-section-3" id="carousel_3edc">
+    <div class="u-align-left u-expanded-width u-palette-2-base u-shape u-shape-1"></div>
+    <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+                <div class="u-size-30">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-image u-layout-cell u-size-60 u-image-1">
+                            <div class="u-container-layout u-valign-middle u-container-layout-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-size-30">
+                    <div class="u-layout-col">
+                        <div class="u-align-left u-container-style u-layout-cell u-palette-2-base u-size-30 u-layout-cell-2">
+                            <div class="u-container-layout u-valign-top u-container-layout-2">
+                                <h1 class="u-text u-text-1">Немного о нас</h1>
+                                <p class="u-text u-text-body-alt-color u-text-2">Современный кабинет физики - это современный комплекс средств, обеспечивающий оптимальные условия для организации учебно-воспитательного процесса с применением новейших технологий обучения физике.
+                                </p>
+                                <a href="https://ореншкола40.рф/"
+                                   class="u-border-2 u-border-white u-btn u-button-style u-btn-1">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-3">
+                            <div class="u-container-layout"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="u-clearfix u-palette-2-light-3 u-section-4" id="carousel_0dee">
+    <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
+        <h1 class="u-text u-text-1">Пиши, твори и вдохновляй!</h1>
+        <p class="u-text u-text-grey-40 u-text-2">Всё зависит только от тебя!</p>
+    </div>
+</section>
+<section class="u-clearfix u-palette-2-light-3 u-section-5" id="carousel_3f5e">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-shape u-shape-svg u-text-palette-2-light-2 u-shape-1">
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style="">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-99bf"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                 xml:space="preserve" class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-99bf"><path d="M157.4,45.5c11.3-39.1-16.3-50.2-43.8-43.8c-25.2,5.8-35.5,17.2-61,16.5C21.7,17.4,0,39.8,0,71.3
+	c0,49.1,58.2,47.8,76.2,68.5c38.8,44.7,92.8,8.2,79.3-40.3C148.1,73.2,155.9,50.6,157.4,45.5z"></path></svg>
+        </div>
+        <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+            <div class="u-container-layout u-valign-top u-container-layout-1">
+                <p class="u-custom-font u-heading-font u-text u-text-palette-2-base u-text-1"> Наука должна помогать
+                    подрастающему поколению постигать противоречия жизни<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -
+                    В.В. Путин
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    <section class="u-align-left u-clearfix u-image u-shading u-section-6" id="carousel_67d9">-->
+<!--      <div class="u-clearfix u-sheet u-sheet-1">-->
+<!--        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">-->
+<!--          <div class="u-layout">-->
+<!--            <div class="u-layout-row">-->
+<!--              <div class="u-container-style u-layout-cell u-left-cell u-size-35 u-layout-cell-1">-->
+<!--                <div class="u-container-layout u-valign-top u-container-layout-1">-->
+<!--                  <h1 class="u-text u-text-1">КАК ОПИСАТЬ ПРИРОДУ</h1>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="u-container-style u-layout-cell u-right-cell u-size-25 u-layout-cell-2">-->
+<!--                <div class="u-container-layout u-container-layout-2">-->
+<!--                  <p class="u-text u-text-body-alt-color u-text-2">ОСНОВНАЯ ЗАДАЧА СОСТОИТ В РАСКРЫТИИ ТЕМЫ ОПИСАНИЯ ПРИРОДЫ ПРОФЕССИОНАЛЬНЫМ ЖУРНАЛИСТОМ:<br>ПРАВИЛА И ОСНОВНЫЕ ПРИНЦИПЫ&nbsp;-->
+<!--                  </p>-->
+<!--                  <a href="https://nicepage.com/website-design" class="u-active-white u-align-left u-border-2 u-border-white u-btn u-button-style u-hover-white u-none u-text-active-palette-4-dark-2 u-text-body-alt-color u-text-hover-palette-4-dark-2 u-btn-1">подробнее</a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+<!--  <section style="background-color: red;">-->
+<!--      <p></p>-->
+<!--  </section>-->
+
+<section class="u-clearfix u-section-7" id="carousel_8cc3">
+    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+            <div class="u-layout-row">
+                <div class="u-container-style u-layout-cell u-left-cell u-palette-2-light-3 u-size-30 u-layout-cell-1"
+                     style="background-color: #2CCCC4;">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                        <!--                <h2 class="u-text u-text-1">ASIZO</h2>-->
+                        <!--                  <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">-->
+                        <p class="u-text u-text-2" style="color: white"><strong style="font-size: 18px;">Наш
+                            адрес:</strong><br>город Оренбург, улица Культурная, 21<br>
+                            <br>
+                            <strong id="numb-phone1" style="font-size: 18px;"> Паспорт:</strong> <a href="PKF_2022_2023.docx" download="PKF_2022_2023.docx">
+                                <button>Скачать файл</button>
+                            </a>
+                            <br>
+                            <br>
+                            <strong style="font-size: 18px;">Наша почта:</strong>
+                            <br>asizo.it@gmail.com
+                        </p>
+                        <!--                <div class="u-social-icons u-spacing-10 u-social-icons-1">-->
+                        <!--                  <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 26px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9e63"></use></svg><svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" xml:space="preserve" id="svg-9e63" class="u-svg-content"><path d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>-->
+                        <!--                  </a>-->
+                        <!--                  <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 26px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-262b"></use></svg><svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" xml:space="preserve" id="svg-262b" class="u-svg-content"><path d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path></svg></span>-->
+                        <!--                  </a>-->
+                        <!--                  <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 26px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8fba"></use></svg><svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" xml:space="preserve" id="svg-8fba" class="u-svg-content"><path d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg></span>-->
+                        <!--                  </a>-->
+                        <!--                  <a class="u-social-url" target="_blank" href="#"><span class="u-icon u-icon-circle u-social-icon u-social-pinterest u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 26px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f751"></use></svg><svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" xml:space="preserve" id="svg-f751" class="u-svg-content"><path d="M61.9,79.8c-5.5-0.3-7.8-3.1-12-5.8c-2.3,12.4-5.4,24.3-13.8,30.5c-2.6-18.7,3.8-32.8,6.9-47.7 c-5.1-8.7,0.7-26.2,11.5-21.9c13.5,5.4-11.6,32.3,5.1,35.7c17.6,3.5,24.7-30.5,13.8-41.4c-15.7-16.1-45.7-0.5-42,22.3 c0.9,5.6,6.7,7.2,2.3,15c-10.1-2.2-13-10.2-12.7-20.7c0.6-17.3,15.5-29.3,30.5-31.1c19-2.2,36.8,6.9,39.2,24.7 C93.4,59.5,82.3,81.3,61.9,79.8z"></path></svg></span>-->
+                        <!--                  </a>-->
+                        <!--                  <a class="u-social-url" target="_blank" href="#"><span class="u-icon u-icon-circle u-social-behance u-social-icon u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 26px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3c8f"></use></svg><svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" xml:space="preserve" id="svg-3c8f" class="u-svg-content"><rect x="70.3" y="32" width="23" height="6.9"></rect><path d="M48.3,54c0,0,8.5-0.6,8.5-10.5s-6.9-14.8-15.7-14.8H12v55.9h29.1c0,0,17.8,0.6,17.8-16.5 C58.7,68.1,59.5,54.2,48.3,54z M24.8,38.5h16.3c0,0,4,0,4,5.8s-2.4,6.6-5,6.6H24.8V38.5z M40.3,74.5H24.8V59.6h16.3c0,0,6,0,6,7.7 C46.9,73.7,42.5,74.5,40.3,74.5z"></path><path d="M82.3,43C61,43,61,64.2,61,64.3c0,0-1.5,21.3,21.3,21.3c0,0,19.1,1.2,19.1-14.8h-9.7c0,0,0.2,6-8.9,6 c0,0-9.7,0.7-9.7-9.6h29C101.8,67.2,105,42.8,82.3,43z M72.8,59.6c0,0,1.2-8.6,9.7-8.6s8.5,8.6,8.6,8.6H72.8z"></path></svg></span>-->
+                        <!--                  </a>-->
+                        <!--                  <a class="u-social-url" target="_blank" href="#"><span class="u-icon u-icon-circle u-social-dribbble u-social-icon u-icon-6"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 26px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-131f"></use></svg><svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" xml:space="preserve" id="svg-131f" class="u-svg-content"><path d="M56.1,11.1c-24.8,0-45,20.2-45,45s20.2,45,45,45s45-20.2,45-45C101.1,31.3,80.9,11.1,56.1,11.1z M56.1,18.1 c9.6,0,18.3,3.7,25.1,9.5c-1.2,1.5-6.8,8.7-19.7,13.5C55.6,30.2,49,21.2,47.5,19C50.3,18.4,53.2,18.1,56.1,18.1z M39.9,21.7 c1.3,1.9,7.8,11,13.9,21.7c-16.4,4.3-31,4.7-34.3,4.5h-0.3C21.5,36.3,29.3,26.8,39.9,21.7z M18.2,56.1c0-0.2,0-0.6,0-0.9 c0.2,0,0.6,0,1,0c4.6,0,21.1-0.3,37.9-5.5c1,2,2,4.1,2.9,6c-0.3,0.1-0.9,0.2-1.3,0.3c-19,6.3-29.6,22.7-31.1,25.1 C21.8,74.6,18.2,65.8,18.2,56.1z M56.1,94.4c-8.7,0-16.8-3-23.2-8c1.2-2.1,8.9-16.4,29.8-23.6l0,0l0,0c5.3,13.6,7.5,25,8.1,28.7 C66.3,93.3,61.3,94.4,56.1,94.4z M77.7,87.5c-0.5-2.9-2.7-13.6-7.3-26.7c2.7-0.3,5.2-0.6,7.7-0.6c8,0,14.3,1.6,15.7,2.1 C91.9,72.7,86,81.8,77.7,87.5z M76.5,53.7c-2.8,0-5.8,0.1-8.7,0.5c-0.2-0.5-0.5-1.2-0.8-1.7c-0.8-1.7-1.5-3.5-2.4-5.3 c13.2-5.5,19.7-13,21-15c5.2,6.4,8.4,14.5,8.5,23.3C92.4,55.1,85.2,53.7,76.5,53.7z"></path></svg></span>-->
+                        <!--                  </a>-->
+                        <!--                </div>-->
+                    </div>
+                </div>
+                <div class="u-align-left u-container-style u-layout-cell u-palette-2-base u-right-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                        <div class="u-form u-form-1">
+                            <form action="https://forms.nicepagesrv.com/Form/Process"
+                                  class="u-clearfix u-form-spacing-24 u-form-vertical u-inner-form"
+                                  style="padding: 24px;" source="email" name="form">
+                                <div class="u-form-group u-form-name">
+                                    <label for="name-3b9a" class="u-form-control-hidden u-label">Name</label>
+                                    <input type="text" placeholder="Введите ваше имя" id="name-3b9a" name="name"
+                                           class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-1"
+                                           required="">
+                                </div>
+                                <div class="u-form-email u-form-group">
+                                    <label for="email-3b9a" class="u-form-control-hidden u-label">Email</label>
+                                    <input type="email" placeholder="Введите электронную почту" id="email-3b9a"
+                                           name="email"
+                                           class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2"
+                                           required="">
+                                </div>
+                                <div class="u-form-group u-form-message">
+                                    <label for="message-3b9a" class="u-form-control-hidden u-label">Message</label>
+                                    <textarea placeholder="Ваше сообщение" rows="4" cols="50" id="message-3b9a"
+                                              name="message"
+                                              class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-3"
+                                              required=""></textarea>
+                                </div>
+                                <div class="u-align-left u-form-group u-form-submit">
+                                    <a href="#"
+                                       class="u-active-palette-2-light-3 u-btn u-btn-submit u-button-style u-hover-palette-2-light-2 u-text-palette-2-base u-white u-btn-1">отправить</a>
+                                    <input type="submit" value="submit" class="u-form-control-hidden">
+                                </div>
+                                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been
+                                    sent.
+                                </div>
+                                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please
+                                    fix errors then try again.
+                                </div>
+                                <input type="hidden" value="" name="recaptchaResponse">
+                                <input type="hidden" name="formServices" value="0c01b51bb8e546b01d2d88086d27abad">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="u-backlink u-clearfix u-grey-80">
+    <a class="u-link" href="#" style="color: white; margin-top: 10px">
+        <span style="font-size:16px">&copy;2022 ASIZO</span>
+    </a>
+    <br>
+    <p style="margin-top: 4px; margin-bottom: 1px">All rights reserved</p>
+</section>
+
+</body>
+</html>

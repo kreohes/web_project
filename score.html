@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Оценка заявки</h1>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.est_actual.label }}<br>
+        {{ form.est_actual(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_actual.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_purpose.label }}<br>
+        {{ form.est_purpose(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_purpose.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_validity.label }}<br>
+        {{ form.est_validity(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_validity.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_resonance.label }}<br>
+        {{ form.est_resonance(class="form-control") }}<br>
+        {% for error in form.est_resonance.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_present_style.label }}<br>
+        {{ form.est_present_style(class="form-control") }}<br>
+        {% for error in form.est_present_style.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_professionalism.label }}<br>
+        {{ form.est_professionalism(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_professionalism.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_feed_avail.label }}<br>
+        {{ form.est_feed_avail(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_feed_avail.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_materials_cycle.label }}<br>
+        {{ form.est_materials_cycle(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_materials_cycle.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_add.label }}<br>
+        {{ form.est_add(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_add.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_cliche.label }}<br>
+        {{ form.est_cliche(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_cliche.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_contract.label }}<br>
+        {{ form.est_contract(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_contract.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_gramm_errors.label }}<br>
+        {{ form.est_gramm_errors(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_gramm_errors.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.est_lexical_errors.label }}<br>
+        {{ form.est_lexical_errors(class="form-control", type="form-control") }}<br>
+        {% for error in form.est_lexical_errors.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Подача заявки</h1>
+<form action="" method="post" enctype="multipart/form-data" novalidate>
+    {{ form.hidden_tag() }}
+    <!-- фио -->
+    <p>
+        {{ form.surname.label }}<br>
+        {{ form.surname(class="form-control") }}<br>
+        {% for error in form.surname.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name(class="form-control") }}<br>
+        {% for error in form.name.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.middle_name.label }}<br>
+        {{ form.middle_name(class="form-control") }}<br>
+        {% for error in form.middle_name.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <!--должность-->
+    <p>
+        {{ form.post.label }}<br>
+        {{ form.post(class="form-control") }}<br>
+        {% for error in form.post.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <!--место работы-->
+    <p>
+        {{ form.place.label }}<br>
+        {{ form.place(class="form-control") }}<br>
+        {% for error in form.place.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <!--тема работы-->
+    <p>
+        {{ form.topic.label }}<br>
+        {{ form.topic(class="form-control") }}<br>
+        {% for error in form.topic.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <!--заголовок работы-->
+    <p>
+        {{ form.heading.label }}<br>
+        {{ form.heading(class="form-control") }}<br>
+        {% for error in form.heading.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <!--аннотация-->
+    <p>
+        {{ form.annotation.label }}<br>
+        {{ form.annotation(class="form-control") }}<br>
+        {% for error in form.annotation.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        <!--<form action="" method="post" enctype="multipart/form-data" novalidate>
+        <div>
+            {{ form.csrf_token }}
+        </div>
+        {% for field in form if field.name != 'csrf_token' %}
+            <div>
+                {{ field.label() }}
+                {{ field() }}
+                {% for error in field.errors %}
+                    <div class="error">{{ error }}</div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </form>-->
+        {{ form.docx.label() }}<br>
+        {{ form.docx() }}<br>
+        {{ form.pdf.label() }}<br>
+        {{ form.pdf() }}<br>
+    <!--<div class="form-group">
+        <label for="photo">Приложите фотографию</label>
+        <input type="file" class="form-control-file" id="photo" name="file">
+    </div>-->
+    </p>
+
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+{% endblock %}
