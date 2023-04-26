@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Добавление новости</h1>
+  <form action="" method="post" enctype="multipart/form-data" novalidate>
+      {{ form.hidden_tag() }}
+      <!-- фио -->
+      <!-- заголовок работы -->
+      <p>
+          {{ form.heading.label }}<br>
+          {{ form.heading(class="form-control") }}<br>
+          {% for error in form.heading.errors %}
+              <p content="alert alert-danger" role="alert">
+                  {{ error }}
+              </p>
+          {% endfor %}
+      </p>
+      <!-- аннотация -->
+      <p>
+          {{ form.annotation.label }}<br>
+          {{ form.annotation(class="form-control") }}<br>
+          {% for error in form.annotation.errors %}
+              <p content="alert alert-danger" role="alert">
+                  {{ error }}
+              </p>
+          {% endfor %}
+      </p>
+      <p>
+          <input type="file" name="file">
+      </p>
+      <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+      {{ message }}
+  </form>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+<body>
+{% block content %}
+<h1>{{ projects.heading }}</h1>
+<h5>{{ projects.annotation }}</h5>
+<br>
+<img src= {{ url_for('static', filename = 'images/' + projects.image) }} width="300" alt="previous" title="Previous" border="0">
+{% if current_user.is_developer %}
+<div>
+    <br>
+    <a href="/projects_delete/{{ projects.id }}" class="btn btn-outline-danger">
+        Удалить
+    </a>
+</div>
+{% endif %}-->
+<div>
+    <br>
+    <a href="/like_projects/{{ projects.id }}" class="btn btn-outline-success">
+        Нравится {{ projects.like }}
+    </a>
+    <a href="/dislike_projects/{{ projects.id }}" class="btn btn-outline-danger">
+        Не нравится {{ projects.dislike }}
+    </a>
+</div>
+<hr>
+<p>Напишите комментарий:</p>
+<form action="" method="post" class="comm">
+    <textarea name='text' class="comment"></textarea>
+    <input name="com_submit" type="submit">
+</form>
+<p>Комментарии:</p>
+{% if comments %}
+{% for i in comments %}
+<div class="col-md6 border rounded aaa">
+    <h4>{{i[1].name}}</h4>
+    <div>
+        <h5>{{i[0]}}</h5>
+    </div>
+</div>
+{% endfor %}
+{% else %}
+<div class="col-md6 border rounded aaa">
+    <h5>Ещё никто не написал комментарий :(</h5>
+</div>
+<br>
+{% endif %}
+{% endblock %}
+</body>

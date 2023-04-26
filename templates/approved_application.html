@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Новости</h1>
+{% for item in projects %}
+{% if not item.is_deleted %}
+<div class="col-md-6 border rounded">
+    {% if current_user.is_authenticated %}
+    <a href="/viewing_project/{{ item.id }}" class="text-decoration-none text-reset"><h3>{{item.heading}}</h3></a>
+    <a href="/viewing_project/{{ item.id }}" class="btn btn-outline-success">Подробнее</a>
+    {% else %}
+    <a href="/login" class="text-decoration-none text-reset"><h3>{{item.heading}}</h3></a>
+    <a href="/login" class="btn btn-outline-success">Подробнее</a>
+    {% endif %}
+    <br>
+    <br>
+    <img src= {{ url_for('static', filename = 'images/' + item.image) }} width="200" alt="previous" title="Previous" border="0">
+    <br>
+    <div>
+        Автор - {{item.user.name}}, Дата написания - {{item.created_date}}, images/{{item.image}}
+    </div>
+</div>
+{% endif %}
+<br>
+{% endfor %}
+{% endblock %}

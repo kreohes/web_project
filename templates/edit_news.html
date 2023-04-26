@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h1>Новости</h1>
+    <a href="/application_submission" class="btn btn-outline-success">Добавить</a>
+</div>
+<br>
+
+{% for item in projects %}
+{% if not item.is_deleted %}
+<div class="col-md-6 border rounded">
+    <a href="/viewing_project/{{ item.id }}" class="text-decoration-none text-reset"><h3>{{item.heading}}</h3></a>
+    <a href="/projects_delete/{{ item.id }}" class="btn btn-outline-success">Удалить</a>
+    <br>
+    <br>
+    <center><img src={{ url_for('static', filename = 'images/' + item.image) }} width="200" alt="previous" title="Previous" border="0">
+    <br>
+    <br>
+    <div>
+        Автор - {{item.user.name}}, Дата написания - {{item.created_date}}
+    </div>
+</div>
+{% endif %}
+<br>
+{% endfor %}
+{% endblock %}
